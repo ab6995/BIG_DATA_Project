@@ -10,7 +10,7 @@ plt.style.use('ggplot')
 get_ipython().magic('matplotlib inline')
 #%matplotlib notebook
 #Check path for read csv. Should be path/date-borough-code-cleaned.csv
-df = pd.read_csv("//Users/syedalishehryar/OneDrive/Big Data/Final_Project_Part1/ds1004-big-data-final-project/Data/date-borough-code-cleaned.csv", parse_dates=['CMPLNT_FR_DT'])
+df = pd.read_csv("//Users/Big Data/Final_Project_Part1/Data/date-borough-code-cleaned.csv", parse_dates=['CMPLNT_FR_DT'])
 df['YEAR'] = df['CMPLNT_FR_DT'].dt.year
 df['MONTH'] = df['CMPLNT_FR_DT'].dt.month
 
